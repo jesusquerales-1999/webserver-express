@@ -29,6 +29,6 @@ app.get('/about',(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
-    console.log('App corriendo en el puerto',3000);
+app.listen(process.env.PORT,()=>{
+    console.log('App corriendo en el puerto',process.env.PORT);
 })
